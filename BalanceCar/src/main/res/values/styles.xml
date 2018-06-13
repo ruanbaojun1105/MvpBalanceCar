@@ -1,0 +1,132 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">@color/gray_1</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.Splash">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="NoTranBase" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="colorPrimaryDark">@color/toolbarColor</item>
+        <item name="colorPrimary">@color/toolbarColor</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/gray_1</item>
+        <item name="actionBarSize">@dimen/actionbar_size</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <style name="Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+       <!-- <item name="android:windowBackground">@color/transparent</item>-->
+        <item name="colorPrimaryDark">@color/toolbarColor</item>
+        <item name="colorPrimary">@color/toolbarColor</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/gray_1</item>
+        <item name="actionBarSize">@dimen/actionbar_size</item>
+    </style>
+    <style name="BaseToolbar" parent="Base" >
+        <item name="android:background">@color/toolbarColor</item>
+        <item name="android:elevation" tools:targetApi="lollipop">3dp</item>
+        <item name="android:navigationBarColor" >@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:colorBackground">@color/toolbarColor</item>
+        <item name="android:titleTextColor">@color/white</item>
+    </style>
+
+    <style name="ToolbarTextAppearance" parent="@android:style/TextAppearance.DeviceDefault">>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="NormalTheme" parent="Base">
+
+        <!--<item name="android:windowAnimationStyle">@style/ImageInOutAnimation</item>-->
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 去除阴影 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 窗体背景色 -->
+    </style>
+
+    <style name="RadioButtonT">
+        <item name="android:textColor">@drawable/btn_text_color</item>
+        <item name="android:background">@drawable/green_round</item>
+        <item name="android:minHeight">33dp</item>
+        <item name="android:minWidth">70dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <style name="AppTheme.Divison">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/division_line</item>
+        <item name="android:background">@color/colorDivison</item>
+        <item name="android:divider">@color/colorDivison</item>
+        <item name="android:dividerHeight">@dimen/division_line</item>
+    </style>
+
+    <style name="MatchMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WrapWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.Wrap">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.Wrap.Wrap">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="AppTheme.Wrap.Wrap">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/textsize_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/primary_button</item>
+    </style>
+
+    <style name="AppTheme.Button.Primary">
+        <item name="android:background">@drawable/primary_button</item>
+    </style>
+
+    <style name="BaseDialog" parent="android:Theme.Light">
+    <item name="android:windowFrame">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="tab_appearance">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>
